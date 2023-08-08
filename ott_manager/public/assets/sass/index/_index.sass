@@ -1,0 +1,1016 @@
+.main,
+.cstm-hdr-wppr,
+.hdr-bg-kclr,
+.hdr-wppr,
+.logo-wppr,
+.logo-wppr a,
+nav,
+.cstm-ldr-bnnr-wppr,
+.ld-bnnr-wppr,
+.bnnr-itm,
+.sld-img,
+.sld-img img,
+.add-pop-wppr,
+.pop-hdng-wppr,
+.edt_bnnr_wppr,
+.pop-cls-btn,
+.pop-cntct-wppr,
+.pop-rght-cntct-wppr,
+.pop-lft-cntct-wppr,
+.upld-mdia-btn,
+.pop-cntct-hdng-wppr,
+.mdia-lst,
+.srch-wppr,
+.mdia-cntct-wppr,
+.mdia-hdng-wppr,
+.fltr-cntcnt-wppr,
+.mdia-itm-wppr,
+.upld-img-btn,
+.cstm-ctgry-wppr,
+.ctgry-sld-wppr,
+.ctgry-sld-hdng-wppr,
+.sldr-edt-wppr,
+.ctgry-sld-sldr,
+.burg-menu,
+.cntnt-ldr-wppr,
+.lodng-gif,
+.lodng-gif img,
+.live_vdo_wppr,
+.vdo_wppr,
+.lv_vdo_plyr_wppr,
+.lv_vdo_dtl_wppr,
+.edt_frm_wppr
+    width: 100%
+    position: relative
+    display: block
+video
+    width: 100%
+    height: 100%
+    display: block
+    object-fit: cover
+.main
+    padding-right: 3px
+    transition: all 1s
+    overflow-x: hidden
+    overflow-y: auto
+    margin: 0 auto
+    height: 90%
+.comn-sctn,
+.ctgry-sld-wppr
+    &:hover
+        .cls-sctn-btn
+            opacity: 1
+            visibility: visible
+.cls-sctn-btn
+    transform: rotate(45deg)
+    justify-content: center
+    background: $ThemClr
+    align-items: center
+    border-radius: 50%
+    visibility: hidden
+    position: absolute
+    line-height: 20px
+    font-weight: 400
+    font-size: 20px
+    color: $white
+    display: flex
+    height: 18px
+    width: 18px
+    z-index: 2
+    opacity: 0
+    right: 5px
+    border: 0
+    top: 0px
+    &:hover
+        background: #502ee4
+.ctgry-sld-wppr
+    .cls-sctn-btn
+        top: 5px
+.cstm-hdr-wppr
+    position: absolute
+    transition: all 1s
+    padding: 10px
+    width: 99.79%
+    display: none
+    z-index: 3
+    left: 0
+    top: 0
+    .hdr-bg-kclr
+        padding-right: 3px
+        transition: all 1s
+        position: absolute
+        background: #fff
+        height: 100%
+        left: 0
+        top: 0
+        &::before
+            @include aftrBeforBX(100%,100%,-100%,0,0,0px)
+            background: linear-gradient(to bottom, rgb(0 0 0) 2%, rgb(0 0 0 / 48%) 31%,rgba(0, 0, 0, 0) 80%, rgba(0, 0, 0, 0) 100%)
+            background: -moz-linear-gradient(top,  rgba(0,0,0,0.65) 0%, rgba(0,0,0,0) 100%)
+            background: -webkit-linear-gradient(top,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%)
+            transition: all 1s
+    .hdr-wppr
+        display: flex
+        align-items: center
+        justify-content: space-between
+        .logo-wppr
+            display: flex
+            width: auto
+            flex: 0.5
+            a
+                display: flex
+            img
+                width: 50%
+        .burg-menu
+            width: 30px
+            padding: 5px
+            display: none
+            cursor: pointer
+            margin-right: 5px
+            &:hover
+                span
+                    background: $ThemClr
+            span
+                display: block
+                width: 100%
+                height: 2px
+                background: $white
+                &:nth-child(2)
+                    margin: 3px 0
+        nav
+            flex: 1
+            .logo-ovrly,
+            .menu_logo,
+            .cls-menu
+                display: none
+            ul
+                display: flex
+                position: relative
+                align-items: center
+                justify-content: flex-start
+                li
+                    display: flex
+                    margin-right: 15px
+                    &:last-child
+                        margin-right: 0
+                    a
+                        // color: $black
+                        color: $white
+                        font-size: 16px
+                        font-weight: 400
+                        line-height: 24px
+                        text-transform: capitalize
+                        &:hover
+                            font-weight: 700
+                .actv_tab
+                    a
+                        color: #eaa33b
+.fixed-hdr
+    .hdr-bg-kclr
+        background: transparent !important
+        &::before
+            top: 0
+.cstm-ldr-bnnr-wppr
+    height: 0
+    width: 100%
+    overflow: hidden
+    visibility: hidden
+    transition: all 1s
+    .ld-bnnr-wppr
+        overflow: hidden
+        .owl-stage-outer,
+        .owl-stage,
+        .owl-item,
+        .bnnr-itm,
+        .sld-img,
+        .sld-img img
+            height: 100%
+        .owl-dots
+            top: auto
+            width: auto
+            z-index: 1
+            left: 50%
+            bottom: 0
+            transform: translate(-50%, 0%)
+            .owl-dot
+                span
+                    margin: 5px 3px
+                    height: 8px
+                    width: 8px
+            .active
+                span
+                    width: 13px
+                    background: #7d7d7d
+.SlideDown
+    visibility: visible
+.cstm-ctgry-wppr
+    width: 101%
+    display: none
+    padding: 0 20px 0px
+    background: $white
+    .ctgry-sld-wppr
+        padding: 10px 0
+        .ctgry-sld-hdng-wppr
+            justify-content: space-between
+            align-items: center
+            display: flex
+            padding: 0 30px 0 5px
+            h4
+                font-size: 16px
+                font-weight: 700
+                line-height: 24px
+                padding-left: 5px
+                text-transform: capitalize
+            .sldr-edt-wppr
+                width: auto
+                .edt-btn
+                    border: 1px solid #c3c3c3
+                    justify-content: center
+                    background: #efefef
+                    letter-spacing: 4px
+                    padding-bottom: 8px
+                    align-items: center
+                    border-radius: 4px
+                    padding-left: 6px
+                    font-weight: 800
+                    color: #7d7d7d
+                    line-height: 6px
+                    font-size: 14px
+                    display: flex
+                    width: auto
+                ul
+                    box-shadow: 0 4px 10px #c5c5c5
+                    border-radius: 3px
+                    position: absolute
+                    background: $white
+                    padding: 10px
+                    display: none
+                    width: 160px
+                    z-index: 2
+                    top: 25px
+                    right: 0
+                    &::before
+                        @include aftrBeforBX(0,0,-10px,6px,0,auto)
+                        border-right: 10px solid transparent
+                        border-left: 10px solid transparent
+                        border-bottom: 10px solid $white
+                    li
+                        width: 100%
+                        display: block
+                        font-size: 12px
+                        cursor: pointer
+                        font-weight: 300
+                        line-height: 18px
+                        position: relative
+                        margin-bottom: 5px
+                        &:last-child
+                            margin-bottom: 0
+                        &:hover
+                            color: $ThemClr
+        .ctgry-sldr-wppr
+            width: 100%
+            display: block
+            padding: 0 5px
+            overflow: hidden
+            position: relative
+            .ctgry-sld-sldr
+                overflow-y: auto
+                &::-webkit-scrollbar
+                    height: 7px
+                &::-webkit-scrollbar-track
+                    background: #e4e4e4 !important
+        .scrl-hdie
+            overflow: hidden
+        .ctgry-sld-sldr
+            display: flex
+            transition: all 1s
+            align-items: flex-start
+            justify-content: flex-start
+            .owl-stage-outer
+                padding: 0 10px 0 0
+                .owl-stage
+                    padding: 10px 0
+                    .owl-item
+                        &:hover
+                            z-index: 2
+                            .ctgry-sld-itm
+                                span
+                                    transform: scale(1.08)
+                                    border-color: #F55656
+                                    z-index: 1
+                            &:first-child
+                                .ctgry-sld-itm
+                                    span
+                                        transform: translate(14px, -1px) scale(1.08)
+                            &:last-child
+                                .ctgry-sld-itm
+                                    span
+                                        transform: scale(1.08) translate(-14px, -1px)
+            .owl-nav
+                z-index: 1
+                [class*=owl-]
+                    font-size: 20px
+                    line-height: 20px
+                    img
+                        width: 10px
+                    &:hover
+                        color: $ThemClr
+            .ctgry-sld-itm
+                flex: 0 0 13%
+                display: flex
+                padding: 0 1px
+                border-radius: 5px
+                align-items: center
+                cursor: move
+                justify-content: flex-start
+                &:hover
+                    span
+                        border-color: #F55656
+                        z-index: 1
+                span
+                    width: 100%
+                    display: block
+                    position: relative
+                    border-radius: 6px
+                    transition: all .5s
+                    border: 2px solid $white
+                    img
+                        width: 100%
+                        display: block
+                        border-radius: 5px
+        .owl-carousel
+            padding: 0 15px
+        .tab_sldr
+            .ctgry-sld-itm
+                flex: 0 0 20%
+        .mobl_sldr
+            .ctgry-sld-itm
+                flex: 0 0 25%
+    .ui-sortable-helper
+        opacity: .5
+    .move_hvr
+        &:hover
+            cursor: move
+.tab-viw-stn
+    .cstm-hdr-wppr
+        padding: 3px 0
+        .hdr-wppr
+            .logo-wppr
+                width: 110px
+                flex: none
+                img
+                    width: 100%
+            nav
+                width: calc( 100% - 150px )
+                justify-content: flex-end
+                align-items: center
+                display: flex
+                flex: none
+
+    .cstm-ctgry-wppr
+        padding: 0 10px
+.mobl-viw-stn
+    .cstm-hdr-wppr
+        padding: 3px 0
+        .hdr-wppr
+            .logo-wppr
+                width: 60px
+                flex: none
+                img
+                    width: 100%
+            .burg-menu
+                display: block
+            nav
+                box-shadow: 3px 5px 10px #00000052
+                height: calc(100vh - 104px)
+                transition: all 1.5s
+                padding: 30px 20px
+                background: $white
+                visibility: hidden
+                position: absolute
+                display: block
+                right: 120%
+                z-index: 2
+                width: 100%
+                top: -3px
+                .cls-menu
+                    top: 10px
+                    border: 0
+                    width: 30px
+                    right: 10px
+                    color: #888
+                    display: block
+                    font-size: 36px
+                    cursor: pointer
+                    line-height: 30px
+                    position: absolute
+                    background: transparent
+                    transform: rotate(45deg)
+                    &:hover
+                        color: $ThemClr
+                .logo-ovrly
+                    position: absolute
+                    display: block
+                    padding: 10px
+                    width: 100%
+                    height: 25%
+                    opacity: .1
+                    bottom: 0
+                    left: 0
+                    img
+                        width: 100%
+                        height: 100%
+                        object-fit: contain
+                .menu_logo
+                    width: 100%
+                    display: block
+                    position: relative
+                    margin-bottom: 20px
+                    a
+                        display: block
+                        img
+                            width: 150px
+                            display: block
+                ul
+                    flex-wrap: wrap
+                    padding: 0 15px
+                    li
+                        margin: 0
+                        width: 100%
+                        display: block
+                        margin-bottom: 10px
+            .opn-menu
+                right: 9px
+                visibility: visible
+    .cstm-ctgry-wppr
+        padding: 0 5px
+    .cstm-ctgry-wppr
+        .ctgry-sld-wppr
+            .ctgry-sld-hdng-wppr
+                h4
+                    font-size: 12px
+                    line-height: 18px
+            .sldr-edt-wppr
+                .edt-btn
+                    letter-spacing: 2px
+                    padding-bottom: 5px
+                    border-radius: 2px
+                    padding-left: 4px
+                    line-height: 4px
+                    font-size: 11px
+.pblc-pop-show
+    transform: translate(-50%, 30px)
+    position: fixed
+    width: 1215px
+    height: auto
+    z-index: 3
+    left: 50%
+    top: 0%
+// <!-- Add Bnner Pop Design html -->
+.add-pop-wppr
+    box-shadow: 0 8px 10px rgb(0 0 0 / 40%)
+    transform: translate(-50%,-50%)
+    border-radius: 8px
+    position: absolute
+    display: none
+    height: 70%
+    z-index: 2
+    width: 90%
+    left: 50%
+    top: 50%
+    .pop-hdng-wppr
+        display: flex
+        align-items: center
+        padding: 7px 20px
+        background: #A3AED0
+        border-top-left-radius: 8px
+        border-top-right-radius: 8px
+        justify-content: space-between
+        .title
+            h6
+                color: $white
+                font-size: 16px
+                font-weight: 400
+                line-height: 24px
+        .pop-cls-btn
+            width: 20px
+            height: 20px
+            color: $white
+            display: flex
+            font-size: 17px
+            font-weight: 700
+            align-items: center
+            border-radius: 50%
+            background: transparent
+            justify-content: center
+            transform: rotate(45deg)
+            border: 2px solid $white
+            &:hover
+                background: $ThemClr
+                border-color: $ThemClr
+    .pop-cntct-wppr
+        height: 100%
+        display: flex
+        align-items: flex-start
+        height: calc(100% - 38px)
+        justify-content: flex-start
+        .pop-lft-cntct-wppr
+            width: 200px
+            height: 100%
+            background: #f1f2f7
+            border-bottom-left-radius: 8px
+            .upld-mdia-btn
+                margin: 20px 0
+                padding: 0px 20px
+                .fil-upld
+                    left: 50%
+                    opacity: 0
+                    z-index: 1
+                    width: 80%
+                    height: 100%
+                    cursor: pointer
+                    position: absolute
+                    transform: translateX(-50%)
+                    &:hover ~ .upld-btn
+                        background: $ThemClr
+                        color: $white
+                .upld-btn
+                    box-shadow: 0 3px 4px #00000054
+                    justify-content: center
+                    border-radius: 50px
+                    align-items: center
+                    background: $white
+                    text-align: center
+                    padding: 8px 20px
+                    line-height: 24px
+                    font-size: 14px
+                    display: flex
+                    width: 100%
+                    border: 0
+            .pop-cntct-hdng-wppr
+                margin: 10px 0
+                .title
+                    padding: 0 20px
+                    margin-bottom: 10px
+                    h6
+                        font-size: 16px
+                        font-weight: 400
+                        line-height: 24px
+                .mdia-lst
+                    ul
+                        width: 100%
+                        display: block
+                        position: relative
+                        li
+                            width: 100%
+                            color: #666
+                            font-size: 12px
+                            font-weight: 400
+                            line-height: 20px
+                            margin-bottom: 5px
+                            padding: 10px 20px
+                            background: #e5e7ea
+                            text-transform: capitalize
+        .pop-rght-cntct-wppr
+            border-bottom-right-radius: 8px
+            width: calc( 100% - 200px )
+            padding: 15px 20px
+            background: $white
+            height: 100%
+            .srch-wppr
+                margin-bottom: 20px
+                .srch-icn
+                    justify-content: center
+                    align-items: center
+                    position: absolute
+                    color: #adacac
+                    cursor: pointer
+                    display: flex
+                    height: 100%
+                    width: 40px
+                    opacity: .5
+                    z-index: 2
+                    left: 0
+                    top: 0
+                    &:hover
+                        color: $ThemClr
+                fieldset
+                    margin-bottom: 0
+                    .srch-txt-bx
+                        width: 100%
+                        display: block
+                        font-size: 16px
+                        font-weight: 500
+                        line-height: 20px
+                        padding: 8px 15px
+                        position: relative
+                        padding-left: 40px
+                        border-radius: 50px
+                        background: transparent
+                        border: 2px solid #f1f1f1
+                        &::placeholder
+                            color: #666
+                            opacity: .5
+            .mdia-cntct-wppr
+                justify-content: flex-start
+                height: calc(100% - 60px)
+                align-items: flex-start
+                flex-wrap: wrap
+                display: flex
+                .mdia-hdng-wppr
+                    margin: 10px 0
+                    h6
+                        font-size: 16px
+                        font-weight: 400
+                        line-height: 24px
+                        text-transform: capitalize
+                .fltr-cntcnt-wppr
+                    display: flex
+                    align-items: center
+                    justify-content: flex-start
+                    .flt-hdng
+                        display: flex
+                        margin-right: 20px
+                        small
+                            color: #666
+                            font-size: 14px
+                            font-weight: 500
+                            line-height: 24px
+                            text-transform: capitalize
+                    .slctr-txt-wppr
+                        width: 120px
+                        cursor: pointer
+                        padding: 3px 15px
+                        margin-right: 10px
+                        position: relative
+                        padding-right: 25px
+                        border-radius: 50px
+                        border: 1px solid #dadada
+                        &::before
+                            @include aftrBeforBX(6px, 6px, 50%, 0px,0,auto)
+                            transform: rotate(45deg) translate(-10px, 4px)
+                            border-bottom: 1px solid #b7b7b7
+                            border-right: 1px solid #b7b7b7
+                        .slct-txt
+                            line-height: 20px
+                            font-weight: 400
+                            font-size: 14px
+                            color: #b7b7b7
+                            display: block
+                            // height: 40px
+                        ul
+                            box-shadow: 0 3px 5px #0000007a
+                            position: absolute
+                            background: $white
+                            padding: 5px 0
+                            overflow: auto
+                            // height: 200px
+                            display: none
+                            width: 100%
+                            z-index: 2
+                            top: 27px
+                            left: 0
+                            li
+                                width: 100%
+                                display: block
+                                cursor: pointer
+                                font-size: 12px
+                                font-weight: 400
+                                padding: 3px 10px
+                                line-height: 17px
+                                position: relative
+                                color: #666
+                                &:hover
+                                    background: #ccc
+                .mdia-itm-wppr
+                    height: 70%
+                    display: flex
+                    margin-bottom: 10px
+                    overflow: auto
+                    flex-wrap: wrap
+                    padding-right: 10px
+                    align-items: flex-start
+                    justify-content: flex-start
+                    .col-4
+                        display: inline-block
+                        margin-top: 15px
+                        cursor: pointer
+                        padding: 0 8px
+                        &:hover
+                            span
+                                border-color: #F55656
+                        span
+                            width: 100%
+                            display: block
+                            position: relative
+                            margin-bottom: 5px
+                            border: 2px solid $white
+                            img
+                                width: 100%
+                                display: block
+                        .title
+                            p
+                                font-size: 12px
+                                overflow: hidden
+                                font-weight: 400
+                                line-height: 18px
+                                text-align: center
+                                display: -webkit-box
+                                -webkit-line-clamp: 2
+                                text-transform: capitalize
+                                -webkit-box-orient: vertical
+                .upld-img-btn
+                    display: flex
+                    margin-top: 10px
+                    align-items: center
+                    justify-content: flex-end
+                    .upload-btn
+                        justify-content: center
+                        background: #a3aed0
+                        border-radius: 50px
+                        align-items: center
+                        text-align: center
+                        padding: 5px 20px
+                        line-height: 20px
+                        font-weight: 400
+                        font-size: 14px
+                        display: flex
+                        color: $white
+                        border: 0
+                        &:hover
+                            background: $ThemClr
+.edt_bnnr_wppr
+    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.4)
+    transform: translate(-50%, -50%)
+    background: #ffffff
+    border-radius: 8px
+    position: fixed
+    display: none
+    // height: 70%
+    z-index: 10
+    width: 35%
+    left: 50%
+    top: 50%
+    .edt_hdng
+        display: flex
+        padding: 15px 20px
+        background: #A3AED0
+        align-items: center
+        border-top-left-radius: 8px
+        border-top-right-radius: 8px
+        justify-content: space-between
+        .title
+            h6
+                color: $white
+                font-size: 20px
+                font-weight: 400
+                line-height: 30px
+        .pop-cls-btn
+            width: 20px
+            height: 20px
+            color: $white
+            display: flex
+            font-size: 17px
+            font-weight: 700
+            align-items: center
+            border-radius: 50%
+            background: transparent
+            justify-content: center
+            transform: rotate(45deg)
+            border: 2px solid $white
+            &:hover
+                background: $ThemClr
+                border-color: $ThemClr
+    .edt_frm_wppr
+        padding: 15px 20px
+        fieldset
+            z-index: auto
+            &:last-child
+                margin-bottom: 0
+            label
+                width: 100%
+                display: block
+                font-size: 16px
+                font-weight: 500
+                line-height: 24px
+                position: relative
+                margin-bottom: 8px
+            .slctr-txt-wppr,
+            .txtara_inpt
+                width: 100%
+                cursor: pointer
+                padding: 3px 15px
+                margin-right: 10px
+                position: relative
+                border-radius: 3px
+                padding-right: 25px
+                border: 1px solid #dfe0e4
+                box-shadow: 0px 1px 10px rgb(19 18 66 / 14%)
+                &::before
+                    @include aftrBeforBX(10px, 10px, 50%, 0px,0,auto)
+                    transform: rotate(45deg) translate(-23px, 15px)
+                    border-bottom: 1px solid #b7b7b7
+                    border-right: 1px solid #b7b7b7
+                .slct-txt
+                    line-height: 40px
+                    font-weight: 400
+                    font-size: 16px
+                    display: block
+                    color: #b7b7b7
+                    height: 40px
+                ul
+                    box-shadow: 0 3px 5px #0000007a
+                    position: absolute
+                    background: $white
+                    padding: 5px 0px
+                    // overflow: auto
+                    // height: 200px
+                    display: none
+                    width: 100%
+                    z-index: 2
+                    top: 47px
+                    left: 0
+                    li
+                        width: 100%
+                        display: block
+                        cursor: pointer
+                        padding: 0 15px
+                        font-size: 16px
+                        font-weight: 400
+                        line-height: 40px
+                        position: relative
+                        color: #666
+                        .lst_srch
+                            text-align: left
+                            width: 100%
+                            display: block
+                            padding: 0 15px
+                            font-size: 16px
+                            font-weight: 400
+                            line-height: 40px
+                            position: relative
+                            border: 1px solid #e8e8e8
+                            box-shadow: 0 5px 10px #e8e8e8
+                    .lst_itm
+                        &:hover
+                            background: #ccc
+                        .lst_srch
+                            width: 100%
+                            display: block
+                            padding: 0 15px
+                            font-size: 16px
+                            font-weight: 400
+                            line-height: 40px
+                            position: relative
+                            border: 1px solid #e8e8e8
+                            box-shadow: 0 5px 10px #e8e8e8
+            .txtara_inpt
+                resize: none
+                height: 130px
+                padding: 15px
+                &::placeholder
+                    color: #b7b7b7
+        .vdo_url,
+        .vdo_id
+            display: none
+        .vdo_id
+            .slctr-txt-wppr
+                ul
+                    height: 200px
+                    overflow: auto
+    .frm_sbmt_Wppr
+        border-bottom-right-radius: 8px
+        border-bottom-left-radius: 8px
+        justify-content: flex-end
+        background: #F1F3F8
+        align-items: center
+        padding: 15px
+        position: relative
+        display: flex
+        width: 100%
+        .updt_bnnr_btn
+            border: 0
+            font-size: 14px
+            font-weight: 500
+            line-height: 24px
+            padding: 5px 20px
+            background: $white
+            border-radius: 50px
+            text-transform: capitalize
+            box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.25)
+            &:hover
+                background: $ThemClr
+                color: $white
+.ovrly_wppr
+    background: #00000026
+    transition: all .5s
+    position: fixed
+    height: 0vh
+    width: 100%
+    z-index: 9
+    left: 0
+    top: 0
+.ovrly-hide
+    height: 100vh
+
+
+.ui-state-highlight
+    height: 10em
+    position: relative !important
+    background: #f3f3f3a9 !important
+    border: 2px dashed #ddd !important
+    &::before
+        @include aftrBeforBX(auto,auto,50%,0%,0,50%)
+        transform: translate(-30px,-30%)
+        content: '+ Add'
+        font-size: 20px
+        color: #666
+        opacity: .4
+// Loading Data Section  sass
+.cntnt-ldr-wppr
+    transition: all 1s
+    position: absolute
+    background: $white
+    visibility: hidden
+    display: block
+    height: 100%
+    width: 100%
+    opacity: 0
+    z-index: 2
+    left: 0
+    top: 0
+    .lodng-gif
+        justify-content: center
+        align-items: center
+        display: flex
+        height: 100%
+        img
+            width: 50px
+.hide-ldng
+    opacity: .95
+    visibility: visible
+.autscrl
+    .dataTables_wrapper
+        .dataTables_scroll
+            .dataTables_scrollBody
+                overflow: initial !important
+// <!-- Live TV Section Sass -->
+.live_vdo_wppr
+    display: none
+    .vdo_wppr
+        // &::before
+        //     @include aftrBeforBX(100%,100%,0%,0,0,0)
+        //     z-index: 1
+        //     background: radial-gradient(ellipse at center,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%)
+        .lv_logo
+            position: absolute
+            width: 130px
+            z-index: 2
+            left: 30px
+            top: 30px
+            img
+                width: 100%
+                display: block
+        .lv_txt
+            position: absolute
+            right: 30px
+            z-index: 1
+            top: 30px
+            p
+                color: $white
+                background: red
+                font-size: 18px
+                font-weight: 500
+                line-height: 25px
+                padding: 0px 10px
+                border-radius: 2px
+                letter-spacing: 2px
+                text-transform: uppercase
+        .lv_vdo_plyr_wppr
+            height: 550px
+    .lv_vdo_dtl_wppr
+        padding: 30px 15px
+        background: $white
+        .title
+            h4
+                font-size: 28px
+                font-weight: 700
+                line-height: 35px
+                margin-bottom: 10px
+            p
+                color: #666
+                font-weight: 400
+
+
+
+
+
+
+
+
+
+
+
+
+
+

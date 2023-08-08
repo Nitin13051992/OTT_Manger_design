@@ -1,0 +1,243 @@
+.Navigation-Wppr,
+.leftSid,
+.MenuBg-Img,
+.MenuBg-Img span,
+.MenuBg-Img span img,
+.MenuLogo-Wppr span,
+.MenuLogo-Wppr span img,
+.MenuLogo,
+.MenuLogo span,
+.MenuLogo span img,
+.NavMenuBx,
+.NavSclMenu,
+.MenuContct
+    width: 100%
+    display: block
+    position: relative
+
+.Navigation-Wppr    
+    visibility: hidden
+    transition: all 1s
+    overflow: hidden
+    position: fixed    
+    height: 100vh
+    z-index: 10
+    width: 100%
+    opacity: 0
+    bottom: 0
+    right: 0
+    left: 0
+    top: 0
+    &::before
+        @include aftrBeforBX(100%,100%,0px,-100%,0,auto)
+        background: $ThemClr
+        transition: all 1s
+        
+    .col-sm-6
+        padding: 0 
+        height: 100%
+    .MenuContct
+        justify-content: flex-start
+        align-items: flex-start
+        display: flex   
+             
+
+    .leftSid,
+    .MenuBg-Img,
+    .MenuBg-Img span,
+    .MenuBg-Img span img,
+    .MenuContct
+        height: 100%
+    .leftSid
+        width: 0
+        transition: all 1s
+        transition-delay: 1200ms
+        .MenuBg-Img
+            span 
+                &::before
+                    @include aftrBeforBX(100%,100%,0px,0,0,0)
+                    background: #1a489996
+                    z-index: 1
+                img 
+                    object-fit: cover
+        .MenuLogo-Wppr
+            transform: translate(-50%,-50%)
+            position: absolute
+            overflow: hidden
+            z-index: 2
+            height: 270px
+            width: 350px
+            left: 50%
+            top: 50%
+            .MenuLogo
+                height: 100%    
+                opacity: 0
+                height: 100%
+                transition: all 1s
+                transition-delay: 2200ms
+                        
+                                 
+        nav
+            opacity: 0
+            padding: 100px
+            height: 100%
+            transition: all 1s
+            visibility: hidden
+            background: $ThemClr                    
+            .NavMenuBx
+                ul 
+                    width: 100%
+                    position: relative      
+                    li 
+                        width: 100%
+                        position: relative
+                        display: block
+                        margin-bottom: 20px
+                        overflow: hidden
+                        a 
+                            width: 100%
+                            color: $white                                                       
+                            display: block
+                            font-size: 30px 
+                            font-weight: 300
+                            line-height: 40px
+                            transition: all 1s
+                            text-align: center           
+                            transition-delay: 2200ms                                                                         
+                            text-transform: uppercase
+                            transform: translateY(-50px)                            
+                            font-family: 'Ubuntu', sans-serif
+                            &:hover 
+                                transition-delay: 10ms       
+                                color: #cccccc
+                        .DrpDwnLst
+                            width: 100%
+                            padding: 10px 0
+                            display: none
+                            ul 
+                                li 
+                                    margin-bottom: 0
+                                    a 
+                                        font-size: 20px
+                                        line-height: 35px
+                                        transition-delay: 00ms
+                    .DrpDwn-Wppr
+                        &::before
+                            @include aftrBeforBX(10px,10px,15px,25%,0,auto)
+                            transform: rotate(45deg) 
+                            border-bottom: 1px solid $white
+                            border-right: 1px solid $white
+                            transition-delay: 2200ms
+                            transition: all 1s
+                            opacity: 0                            
+                            
+            .NavSclMenu    
+                display: flex
+                align-items: center
+                justify-content: center
+                margin-top: 80px
+                ul 
+                    display: inline-block
+                    position: relative            
+                    li 
+                        display: inline-block
+                        position: relative
+                        margin-right: 15px
+                        overflow: hidden
+                        &:last-child
+                            margin-right: 0
+                        a 
+                            font-size: 20px
+                            color: $white
+                            line-height: 24px
+                            display: block
+                            position: relative
+                            transition: all 1s
+                            transition-delay: 2200ms   
+                            transform: translateY(50px) 
+                            &:hover 
+                                color: $black
+                    .actv_tab 
+                        a
+                            color: #eaa33b
+            .ComnBtn
+                position: absolute
+                top: 30px
+                right: 30px
+                z-index: 1
+                overflow: hidden
+                .ComnBtn-Txt                    
+                    border: 0 
+                    padding: 0                   
+                    border-radius: 0                     
+                    line-height: 20px
+                    transition: all 1s
+                    background: transparent
+                    transition-delay: 2200ms
+                    transform: translateY(-50px) 
+                    &:hover 
+                        color: $black
+
+.MenuOpn
+    opacity: 1
+    visibility: visible
+    &::before
+        right: 0
+    .leftSid
+        width: 100%
+        transform: translateX(00%)
+        .MenuLogo-Wppr 
+            .MenuLogo
+                opacity: 1
+                        
+        nav 
+            opacity: 1
+            visibility: visible
+            .ComnBtn 
+                .ComnBtn-Txt
+                    transform: translate(0,0)
+            .NavMenuBx 
+                ul 
+                    li 
+                        a
+                            transform: translate(0,0)
+                    .DrpDwn-Wppr
+                        &::before
+                            opacity: 1
+            .NavSclMenu 
+                ul 
+                    li 
+                        a
+                            transform: translate(0,0)
+
+.RmvMenu
+    opacity: 0
+    visibility: hidden
+    transition-delay: 2500ms
+    &::before
+        right: -100%
+        transition-delay: 2500ms
+    .leftSid
+        width: 100%
+        transition-delay: 1500ms
+        transform: translateX(-100%)
+        .MenuLogo-Wppr 
+            .MenuLogo
+                opacity: 1
+                
+        nav 
+            opacity: 0
+            visibility: hidden
+            .ComnBtn 
+                .ComnBtn-Txt
+                    transform: translateY(-100%)
+            .NavMenuBx 
+                ul 
+                    li 
+                        a
+                            transform: translateY(-100%)
+            .NavSclMenu 
+                ul 
+                    li 
+                        a
+                            transform: translateY(100%)

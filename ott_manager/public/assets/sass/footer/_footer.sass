@@ -1,0 +1,425 @@
+
+footer,
+.ftr_wppr,
+.ftr_clm_wppr,
+.ftr_abt_wppr,
+.ftr_Menu_wppr,
+.app_str_wppr,
+.footer_stng_wppr,
+.scl_icn_wppr,
+.scl_icn_bx,
+.admor_icns,
+.admr_icn_btn,
+.drp_dwn_icn,
+.url_link_wppr,
+.ftr_menu_txt,
+.app-icn
+    width: 100%
+    position: relative
+    display: block
+    @include respond-to(screen-767)
+
+.ftr_wppr
+    display: none
+    padding: 30px 0px
+    background: $black
+    .ftr_clm_wppr
+        display: flex
+        align-items: flex-start
+        justify-content: space-between
+        .ftr_abt_wppr
+            .title
+                span
+                    width: 100%
+                    display: block
+                    position: relative
+                    margin-bottom: 20px
+                    a
+                        display: block
+                        width: 150px
+                        img
+                            width: 100%
+                            display: block
+                p
+                    color: #888888
+        .ftr_Menu_wppr
+            padding: 0 30px
+            .title
+                h6
+                    margin-bottom: 20px
+                    line-height: 30px
+                    color: #c5c5c5
+                    font-weight: 700
+                    font-size: 24px
+                ul
+                    display: flex
+                    flex-wrap: wrap
+                    align-items: flex-start
+                    justify-content: space-between
+                    li
+                        margin-bottom: 10px
+                        width: 100%
+                        &:last-child
+                            margin-bottom: 0
+                        a
+                            color: #888888
+                            &:hover
+                                color: $white
+        .app_str_wppr
+            display: flex
+            margin-bottom: 30px
+            align-items: flex-start
+            justify-content: space-between
+            a
+                display: block
+                img
+                    display: block
+        .cntct_wppr
+            .title
+                h6
+                    line-height: 20px
+                    color: #c5c5c5
+                    font-weight: 400
+                    font-size: 16px
+                ul
+                    display: flex
+                    flex-wrap: wrap
+                    margin-top: 20px
+                    align-items: flex-start
+                    justify-content: flex-start
+                    li
+                        margin-right: 20px
+                        a
+                            width: 28px
+                            height: 28px
+                            display: flex
+                            border-radius: 50%
+                            position: relative
+                            align-items: center
+                            justify-content: center
+                            color: #888888
+                            border: 1px solid #888888
+                            &:hover
+                                color: $white
+                                border-color: $white
+// End Here
+// Footer Setting Section sass
+.footer_stng_wppr
+    .hdr-sctn-wppr
+        .txt-fld-wppr
+            fieldset
+                textarea
+                    resize: none
+                    position: relative
+                .scl_icn_wppr
+                    padding: 10px !important
+                    .scl_icn_bx
+                        margin-top: 20px
+                        overflow: auto
+                        display: none
+                        ul
+                            width: 100%
+                            display: flex
+                            flex-wrap: wrap
+                            position: relative
+                            align-items: center
+                            justify-content: flex-start
+                            li
+                                position: relative
+                                margin: 0 5px 15px
+                                padding: 5px
+                                display: flex
+                                .cls_btn
+                                    top: 0
+                                    right: 0
+                                    width: 15px
+                                    opacity: .5
+                                    height: 15px
+                                    display: flex
+                                    position: absolute
+                                    border-radius: 50%
+                                    align-items: center
+                                    background: #e4e4e4
+                                    justify-content: center
+                                    border: 1px solid #000
+                                    transform: rotate(45deg)
+                                    &:hover
+                                        background: $ThemClr
+                                        border-color: $white
+                                        color: $white
+                                        opacity: 1
+                                span
+                                    width: 35px
+                                    height: 35px
+                                    display: flex
+                                    font-size: 20px
+                                    color: #666666
+                                    border-radius: 50%
+                                    background: $white
+                                    align-items: center
+                                    justify-content: center
+                                    box-shadow: 0 0 5px #cacaca
+                    .admor_icns
+                        .admr_icn_btn
+                            background: $white
+                            border-radius: 5px
+                            line-height: 24px
+                            font-size: 16px
+                            color: $ThemClr
+                            padding: 8px 0
+                            border: 0
+                            &:hover
+                                background: $ThemClr
+                                color: $white
+                        .drp_dwn_icn
+                            display: none
+                            ul
+                                left: 0
+                                z-index: 1
+                                width: 100%
+                                bottom: 101%
+                                padding: 15px
+                                display: flex
+                                flex-wrap: wrap
+                                border-radius: 5px
+                                position: absolute
+                                background: #e6e6e6
+                                align-items: flex-start
+                                justify-content: flex-start
+                                border-bottom-left-radius: 0
+                                border-bottom-right-radius: 0
+                                .cls_icn_popup
+                                    top: 0
+                                    right: 0
+                                    width: 20px
+                                    height: 20px
+                                    display: flex
+                                    font-size: 25px
+                                    position: absolute
+                                    border-radius: 50%
+                                    align-items: center
+                                    background: $white
+                                    justify-content: center
+                                    border: 1px solid #000
+                                    transform: rotate(45deg)
+                                    &:hover
+                                        border-color: $ThemClr
+                                        background: $ThemClr
+                                        color: $white
+                                li
+                                    margin:0 8px 10px
+                                    line-height: 26px
+                                    color: #5a5959
+                                    font-size: 20px
+                                    cursor: pointer
+                                    padding: 3px
+                                    &:hover
+                                        color: $ThemClr
+                                .icn_slctd
+                                    z-index: -1
+                                    opacity: 0.4
+                                    cursor: no-drop
+                    .url_link_wppr
+                        display: none
+                        margin-top: 30px
+                        fieldset
+                            flex-wrap: wrap
+                            label
+                                width: auto
+                                margin-right: 5px
+                                display: inline-flex
+                            .slct_icn
+                                box-shadow: 0 0px 5px #08080845
+                                display: inline-flex
+                                margin-bottom: 10px
+                                background: #fff
+                                border-radius: 5px
+                                font-size: 13px
+                                color: $ThemClr
+                                padding: 5px
+                            .text-bx
+                                background: $white
+                        .icn_sve_wppr
+                            display: flex
+                            flex-wrap: wrap
+                            margin-top: 20px
+                            align-items: center
+                            justify-content: flex-end
+                            .add_more_btn
+                                border: 1px solid $ThemClr
+                                background: transparent
+                                border-radius: 5px
+                                margin-left: 20px
+                                padding: 5px 20px
+                                line-height: 20px
+                                font-size: 16px
+                                color: $ThemClr
+                                &:hover
+                                    color: $white
+                                    background: $ThemClr
+                            .lnk_rmv
+                                border-color: #FF4218
+                                color: #FF4218
+                                &:hover
+                                    background: #FF4218
+                                    color: $white
+                .enbl_icn
+                    opacity: .5
+                    z-index: -1
+                    &::before
+                        @include aftrBeforBX(100%,100%,0,0,0,0)
+                        background: #0000001f
+                        z-index: 1
+        .ftr_menu_fld
+            margin-bottom: 10px
+            .title
+                h6
+                    width: 100%
+                    display: block
+                    color: $ThemClr
+                    font-size: 16px
+                    font-weight: 700
+                    line-height: 24px
+                    position: relative
+                    margin-bottom: 5px
+                ul
+                    width: 100%
+                    padding: 8px
+                    margin-bottom: 10px
+                    background: #F4F7FE
+                    li
+                        margin: 3px
+                        display: flex
+                        cursor: pointer
+                        font-size: 13px
+                        font-weight: 500
+                        line-height: 20px
+                        position: relative
+                        align-items: center
+                        justify-content: space-between
+                        .ftr_menu_txt
+                            width: calc( 100% - 45px )
+                            &:hover
+                                .cls-btn
+                                    display: block
+                            .cstm-menu-txt
+                                box-shadow: 0px 2px 7px #0000002b
+                                border-radius: 5px
+                                background: $white
+                                padding: 5px 10px
+                                line-height: 20px
+                                color: #868686
+                                font-size: 13px
+                                width: 100%
+                                border: 0
+                            .cls-btn
+                                top: 50%
+                                right: 5px
+                                z-index: 1
+                                width: 15px
+                                height: 15px
+                                display: none
+                                cursor: pointer
+                                border-radius: 50%
+                                position: absolute
+                                background: $ThemClr
+                                transform: translateY(-50%)
+                                &::before,
+                                &::after
+                                    @include aftrBeforBX(0,0,50%,0,0,50%)
+                                    background: $white
+                                    transform: translate(-50%,-50%) rotate(45deg)
+                                &::before
+                                    width: 60%
+                                    height: 2px
+                                &::after
+                                    width: 2px
+                                    height: 60%
+                        .actv-dacv-btn-wppr
+                            width: 40px
+                            height: 18px
+                            display: block
+                            margin-left: 10px
+                            position: relative
+                            .rdo-btn
+                                top: 0
+                                left: 0
+                                opacity: 0
+                                z-index: 1
+                                width: 100%
+                                height: 100%
+                                cursor: pointer
+                                position: absolute
+                                &:checked ~ label
+                                    background: $ThemClr
+                                    border-color: $ThemClr
+                                    &::before
+                                        background: $white
+                                        left: 22px
+                            label
+                                width: 100%
+                                height: 100%
+                                display: block
+                                position: relative
+                                transition: all 1s
+                                border-radius: 50px
+                                border: #adb5bd solid 1px
+                                &::before
+                                    @include aftrBeforBX(13px,13px,1px,0,0,3px)
+                                    transition: all 1s
+                                    border-radius: 50%
+                                    background: #adb5bd
+                .add_menu
+                    border: 0
+                    width: 30px
+                    height: 30px
+                    color: $white
+                    display: flex
+                    cursor: pointer
+                    font-size: 30px
+                    border-radius: 5px
+                    align-items: center
+                    background: #4318ff
+                    justify-content: center
+                    border-bottom-left-radius: 0
+                    &:hover
+                        background: #C7D3FA
+                        color: #000000
+        .plystr_wppr
+            .title
+                ul
+                    li
+                        margin-bottom: 10px
+                        &:last-child
+                            margin-bottom: 0
+                        .app-icn
+                            display: flex
+                            align-items: center
+                            justify-content: center
+                            .app-icn-btn
+                                padding: 5px
+                                border-radius: 5px
+                                transition: all .5s
+                                transform: scale(1)
+                                border: 2px solid transparent
+                                &:hover
+                                    transform: scale(1)
+                                img
+                                    display: block
+                            .actv_app
+                                border-color: #4318ff
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

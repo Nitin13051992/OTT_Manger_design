@@ -1,0 +1,1086 @@
+.lft-menu,
+.menu-hdng,
+.bck-btn-arro,
+.bck-btn-arro a,
+.blk-stng-wppr,
+.left-menu-wppr,
+.all-popup-dsn-wppr,
+.hdr-sctn-wppr,
+.txt-fld-wppr,
+.custm-menu-wppr,
+.cstm-menu-sld,
+.hdr-frm-sbmt,
+.bnnr-slidr-itm-wppr,
+.add-bnnr-btn-wppr,
+.add-bnnr-btn,
+.lead-bnnr-img-itm,
+.bnnr-title-wpprr,
+.lead-bnner-img-bx,
+.bnnr-time-durtn-wppr,
+.ctgry-btn,
+.ctgrt-stng-wppr,
+.srch-fltr-ctgry,
+.ctgry-lst-itm-wppr,
+.ctgry-lst-itm,
+.ctgry-sldr-bx,
+.ctgry-sldr,
+.ctgry-sld-itm,
+.ctgry-sld-itm span,
+.ctgry-sld-itm span img,
+.edit-sldr-wppr,
+.edt-hdng,
+.nmbr-crd-wppr,
+.slctr-txt-wppr,
+.sirs-itm-wppr,
+.sirs-thmlng-img,
+.sirs-thmlng-img img,
+.ads-cntct-wppr,
+.ads-itm-wppr,
+.ads-itm,
+.ads-img,
+.ads-img img,
+.live_TV_Wppr,
+.lv_tv,
+.add_icn,
+.add_chnl_lst_wppr,
+.add_chnl_itm,
+.chnl_vdo
+    width: 100%
+    display: block
+    position: relative
+.cmn-pop-sld
+    display: none
+
+.ui-state-highlight::before
+    display: none
+a.ui-state-highlight
+    height: auto !important
+
+.lft-menu
+    box-shadow: 0 0 10px #00000059
+    background: $white
+    overflow: auto
+    height: 100%
+    padding: 10px 0
+    .menu-hdng
+        display: flex
+        padding: 0 10px
+        align-items: center
+        margin-bottom: 10px
+        justify-content: flex-end
+        .bck-btn-arro
+            display: none
+            width: 20px
+            a
+                &:hover
+                    color: $ThemClr
+        .title
+            width: calc( 100% - 20px )
+
+            h5
+                font-size: 24px
+                font-weight: 500
+                text-align:  center
+    .blk-stng-wppr
+        display: flex
+        flex-wrap: wrap
+        align-items: center
+        border-top: 1px solid #66666661
+        justify-content: space-between
+        // &::before
+        //     @include aftrBeforBX(50%,44px,0,0,0,auto)
+        //     background: rgb(255 255 255 / 73%)
+        //     cursor: no-drop
+        .btn-wppr
+            border: 0
+            width: 49.9%
+            color: #666
+            padding: 10px 0
+            font-size: 16px
+            line-height: 24px
+            background: transparent
+            border-right: 1px solid #66666661
+            border-bottom: 1px solid #66666661
+            &:hover
+                border-bottom: 1px solid $ThemClr !important
+        .active
+            border-bottom: 1px solid $ThemClr !important
+        .ctgry-btn-dsgn
+            display: none
+            &:hover
+                color: $white
+                background: $ThemClr
+        .actv
+            color: $white
+            background: $ThemClr
+    .stn-actv
+        &::before
+            display: none
+    .left-menu-wppr
+        margin-top: 20px
+        padding: 0 10px
+        .title
+            ul
+                width: 100%
+                display: block
+                position: relative
+                padding: 0 15px
+                li
+                    width: 100%
+                    padding: 5px 10px
+                    display: flex
+                    color: #666
+                    cursor: pointer
+                    font-size: 14px
+                    font-weight: 500
+                    line-height: 30px
+                    line-height: 24px
+                    position: relative
+                    margin-bottom: 2px
+                    align-items: center
+                    justify-content: flex-start
+                    &:hover
+                        background: #dedede52
+                        color: $black
+                    em
+                        margin-right: 10px
+                        display: flex
+                .lst-actv
+                    background: #dedede52
+                    color: $black
+    .all-popup-dsn-wppr
+        padding: 20px 0px
+        // Header Banner Setting Sass
+        .hdr-sctn-wppr,
+        .live_chnl_wppr
+            padding: 0 20px
+            .txt-fld-wppr
+                fieldset
+                    margin-bottom: 15px
+                    label
+                        color: #666
+                        width: 100%
+                        display: block
+                        font-size: 13px
+                        font-weight: 500
+                        line-height: 20px
+                        position: relative
+                        margin-bottom: 5px
+                    .text-bx,
+                    .upld-txt
+                        border: 0
+                        width: 100%
+                        display: block
+                        font-size: 14px
+                        line-height: 24px
+                        padding: 10px 15px
+                        border-radius: 5px
+                        background: #F4F7FE
+                        &::placeholder
+                            color: $black
+                    .inputfile
+                        opacity: 0
+                        width: 100%
+                        cursor: pointer
+                        line-height: 24px
+                        padding: 10px 15px
+                        position: absolute
+                    .slider-rang-vlue
+                        display: none
+                    .ui-state-default
+                        border: 2px solid $ThemClr
+                        border-radius: 50px
+                        background: $white
+                        cursor: pointer
+                        height: 20px
+                        width: 20px
+                        top: -4px
+                    .ui-widget.ui-widget-content
+                        border: 0
+                        margin-top: 10px
+                        border-radius: 50px
+                        background: #edf1fd
+                    .ui-slider .ui-slider-range
+                        background: $ThemClr
+                        border-radius: 50px
+                    .actv-dacv-btn-wppr
+                        position: absolute
+                        display: block
+                        height: 16px
+                        width: 36px
+                        z-index: 1
+                        right: 0
+                        top: 0
+                        .rdo-btn
+                            top: 0
+                            left: 0
+                            opacity: 0
+                            z-index: 1
+                            width: 100%
+                            height: 100%
+                            margin-right: 0
+                            cursor: pointer
+                            position: absolute
+                            &:checked ~ label
+                                background: $ThemClr
+                                border-color: $ThemClr
+                                &::before
+                                    background: $white
+                                    left: 20px
+                        label
+                            width: 100%
+                            height: 100%
+                            display: block
+                            position: relative
+                            transition: all .5s
+                            border-radius: 50px
+                            border: #adb5bd solid 1px
+                            &::before
+                                @include aftrBeforBX(12px,12px,1px,0,0,3px)
+                                transition: all 1s
+                                border-radius: 50%
+                                background: #adb5bd
+                    .hide-bg
+                        display: none
+            .custm-menu-wppr
+                margin-top: 20px
+                .title
+                    h6
+                        color: $ThemClr
+                        font-size: 16px
+                        font-weight: 700
+                        line-height: 24px
+                .cstm-menu-sld
+                    padding: 10px
+                    overflow: auto
+                    min-height: 160px
+                    max-height: 160px
+                    margin: 10px 0 20px
+                    background: #e4e8f5
+                    ul
+                        li
+                            width: 100%
+                            display: flex
+                            position: relative
+                            margin-bottom: 5px
+                            align-items: center
+                            justify-content: flex-start
+                            .text-flid-wppr
+                                width: 100%
+                                display: block
+                                position: relative
+                                &:hover
+                                    .cls-btn
+                                        display: block
+                            .actv-dacv-btn-wppr
+                                width: 40px
+                                height: 18px
+                                display: block
+                                margin-left: 10px
+                                position: relative
+                                .rdo-btn
+                                    top: 0
+                                    left: 0
+                                    opacity: 0
+                                    z-index: 1
+                                    width: 100%
+                                    height: 100%
+                                    cursor: pointer
+                                    position: absolute
+                                    &:checked ~ label
+                                        background: $ThemClr
+                                        border-color: $ThemClr
+                                        &::before
+                                            background: $white
+                                            left: 17px
+                                label
+                                    width: 100%
+                                    height: 100%
+                                    display: block
+                                    position: relative
+                                    transition: all 1s
+                                    border-radius: 50px
+                                    border: #adb5bd solid 1px
+                                    &::before
+                                        @include aftrBeforBX(13px,13px,1px,0,0,3px)
+                                        transition: all 1s
+                                        border-radius: 50%
+                                        background: #adb5bd
+                            input
+                                background: $white
+                                padding: 5px 10px
+                                line-height: 18px
+                                font-size: 13px
+                                width: 100%
+                                border: 0
+                                border-radius: 3px
+                            .cls-btn
+                                top: 50%
+                                right: 3px
+                                z-index: 1
+                                width: 15px
+                                height: 15px
+                                display: none
+                                cursor: pointer
+                                border-radius: 50%
+                                position: absolute
+                                background: $ThemClr
+                                transform: translateY(-50%)
+                                &::before,
+                                &::after
+                                    @include aftrBeforBX(0,0,50%,0,0,50%)
+                                    background: $white
+                                    transform: translate(-50%,-50%) rotate(45deg)
+                                &::before
+                                    width: 60%
+                                    height: 2px
+                                &::after
+                                    width: 2px
+                                    height: 60%
+            .hdr-frm-sbmt
+                display: flex
+                align-items: center
+                justify-content: space-between
+                .add-meu-lst
+                    width: 30px
+                    height: 30px
+                    color: $white
+                    display: flex
+                    cursor: pointer
+                    font-size: 20px
+                    border-radius: 5px
+                    align-items: center
+                    background: $ThemClr
+                    justify-content: center
+                    border-bottom-left-radius: 0
+                    &:hover
+                        background: #C7D3FA
+                        color: $black
+                .frm-sbmt
+                    fieldset
+                        margin-bottom: 0
+                        .sbmit-btn
+                            border: 0
+                            padding: 4px 15px
+                            background: $ThemClr
+                            color: $white
+                            font-weight: 500
+                            font-size: 18px
+                            line-height: 22px
+                            border-radius: 5px
+        // Lead Banner Setting Sass
+        .bnnr-slidr-itm-wppr
+            height: calc( 100vh - 230px )
+            padding-right: 10px
+            overflow-x: hidden
+            overflow-y: auto
+            padding: 0 10px
+            .lead-bnnr-img-itm
+                margin-bottom: 15px
+                padding: 5px
+                &:last-child
+                    margin-bottom: 0
+                .bnnr-title-wpprr
+                    display: flex
+                    align-items: center
+                    justify-content: flex-start
+                    img
+                        width: 20px
+                        display: flex
+                    .title
+                        padding: 0 5px
+                        p
+                            color: #666
+                            font-size: 14px
+                            overflow: hidden
+                            line-height: 600
+                            line-height: 24px
+                            display: -webkit-box
+                            -webkit-line-clamp: 1
+                            text-transform: capitalize
+                            -webkit-box-orient: vertical
+                    .img-ctgry-btn
+                        display: flex
+                        position: relative
+                        align-items: center
+                        .ctgry-btn
+                            border: 1px solid #c3c3c3
+                            justify-content: center
+                            background: #efefef
+                            letter-spacing: 4px
+                            padding-bottom: 8px
+                            align-items: center
+                            border-radius: 4px
+                            padding-left: 6px
+                            font-weight: 800
+                            color: #7d7d7d
+                            line-height: 6px
+                            font-size: 14px
+                            display: flex
+                            width: 100%
+                        .ctgry-btn-lst
+                            background: #f9f9f9
+                            position: absolute
+                            border-radius: 3px
+                            display: none
+                            padding: 10px
+                            width: 110px
+                            z-index: 2
+                            top: 18px
+                            right: 0
+                            ul
+                                li,
+                                input
+                                    color: #666
+                                    display: block
+                                    cursor: pointer
+                                    font-size: 12px
+                                    font-weight: 700
+                                    line-height: 14px
+                                    margin-bottom: 4px
+                                    &:last-child
+                                        margin-bottom: 0
+                                    &:hover
+                                        color: $ThemClr
+                                .active_tab
+                                    color: $ThemClr
+                                input
+                                    border: 0
+                                    background: transparent
+                .lead-bnner-img-bx
+                    img
+                        width: 100%
+                        display: flex
+                        object-fit: cover
+                    .cls-img-sld
+                        border: 1px solid $white
+                        transform: rotate(45deg)
+                        background: transparent
+                        justify-content: center
+                        align-items: center
+                        position: absolute
+                        border-radius: 50%
+                        font-size: 20px
+                        cursor: pointer
+                        color: $white
+                        display: flex
+                        height: 17px
+                        width: 17px
+                        z-index: 1
+                        right: 5px
+                        top: 5px
+                        &:hover
+                            background: $ThemClr
+                            border-color: $ThemClr
+                .bnnr-time-durtn-wppr
+                    display: flex
+                    margin: 2px 0
+                    align-items: center
+                    justify-content: space-between
+                    .title
+                        width: 48%
+                        position: initial
+                        &:last-child
+                            p,input
+                                text-align: right
+                        p,input
+                            border: 0
+                            width: 100%
+                            z-index: -1
+                            color: #666
+                            display: block
+                            font-size: 10px
+                            font-weight: 500
+                            padding: 3px 5px
+                            line-height: 16px
+                            transition: all 1s
+                            margin: 5px 0 0px
+                        .actv_indx
+                            background: #f1f1f1
+            .actv_bnnr
+                border: 1px solid #4318ff
+                border-radius: 5px
+        .add-bnnr-btn-wppr
+            margin-top: 15px
+            padding: 0 30px
+            .add-bnnr-btn
+                display: flex
+                font-size: 16px
+                padding: 8px 0
+                font-weight: 500
+                line-height: 24px
+                text-align: center
+                border-radius: 5px
+                transition: all .5s
+                align-items: center
+                justify-content: center
+                background: transparent
+                border: 1px solid #666
+                &:hover
+                    border-color: $ThemClr
+                    background: $ThemClr
+                    color: $white
+        // Categories Setting Sass
+        .ctgrt-stng-wppr
+            max-height: calc(100vh - 215px)
+            overflow: initial
+            .srch-fltr-ctgry
+                display: flex
+                padding: 0 20px
+                align-items: center
+                margin-bottom: 20px
+                justify-content: space-between
+                .srch-wppr
+                    width: calc(100% - 80px)
+                    margin-bottom: 0px
+                    .srch-icn
+                        justify-content: center
+                        align-items: center
+                        position: absolute
+                        color: #adacac
+                        font-size: 14px
+                        cursor: pointer
+                        display: flex
+                        height: 100%
+                        width: 35px
+                        opacity: .5
+                        z-index: 2
+                        left: 0
+                        top: 0
+                        &:hover
+                            color: $ThemClr
+                    fieldset
+                        margin-bottom: 0
+                        .srch-txt-bx
+                            width: 100%
+                            display: block
+                            font-size: 14px
+                            font-weight: 500
+                            line-height: 20px
+                            padding: 5px 15px
+                            position: relative
+                            padding-left: 35px
+                            border-radius: 50px
+                            background: transparent
+                            border: 1px solid #d2d2d2
+                            &::placeholder
+                                color: #666
+                                opacity: .5
+                .fltr-cin-wppr
+                    width: 80px
+                    display: flex
+                    align-items: center
+                    justify-content: flex-end
+                    .fltr-icn
+                        background: transparent
+                        line-height: 24px
+                        font-size: 16px
+                        color: #666
+                        opacity: .6
+                        border: 0
+                        &:hover
+                            color: $ThemClr
+                            opacity: 1
+            .ctgry-lst-itm-wppr
+                h3
+                    font-size: 14px
+                    overflow: hidden
+                    font-weight: 700
+                    line-height: 20px
+                    display: -webkit-box
+                    -webkit-line-clamp: 1
+                    text-transform: capitalize
+                    -webkit-box-orient: vertical
+                .ctgry-sldr-edt-btn
+                    width: auto
+                    .edt-btn
+                        border: 1px solid #c3c3c3
+                        justify-content: center
+                        background: #efefef
+                        letter-spacing: 4px
+                        padding-bottom: 8px
+                        align-items: center
+                        border-radius: 4px
+                        padding-left: 6px
+                        font-weight: 800
+                        color: #7d7d7d
+                        line-height: 6px
+                        font-size: 14px
+                        display: flex
+                        width: auto
+                    ul
+                        box-shadow: 0 4px 10px #c5c5c5
+                        border-radius: 3px
+                        position: absolute
+                        background: $white
+                        padding: 10px 20px
+                        display: none
+                        width: 160px
+                        z-index: 2
+                        top: 25px
+                        right: 0
+                        &::before
+                            @include aftrBeforBX(0,0,-10px,26px,0,auto)
+                            border-right: 10px solid transparent
+                            border-left: 10px solid transparent
+                            border-bottom: 10px solid $white
+                        li
+                            width: 100%
+                            display: block
+                            font-size: 12px
+                            cursor: pointer
+                            font-weight: 300
+                            line-height: 18px
+                            padding-left: 5px
+                            position: relative
+                            margin-bottom: 3px
+                            &::before
+                                @include aftrBeforBX(8px,4px,50%,0px,0,-10px)
+                                transform: translateY(-80%) rotate(-45deg)
+                                border-bottom: 1px solid $ThemClr
+                                border-left: 1px solid $ThemClr
+                                display: none
+                            &:last-child
+                                margin-bottom: 0
+                            &:hover
+                                color: $ThemClr
+                                &::before
+                                    display: block
+                        .actv
+                            color: $ThemClr
+                            &::before
+                                display: block
+                .ctgry-sirs-sld
+                    padding: 0 20px
+                    overflow: hidden
+                    margin-bottom: 10px
+                    padding-bottom: 10px
+                    border-bottom: 1px solid #eaeaea
+                    &:last-child
+                        margin-bottom: 0
+                    .title
+                        display: flex
+                        align-items: center
+                        margin-bottom: 5px
+                        justify-content: flex-end
+                    h3,h6
+                        width: 100%
+                    .sirs-bck-btn
+                        background: transparent
+                        margin-right: 15px
+                        line-height: 20px
+                        font-size: 16px
+                        display: none
+                        color: #666
+                        border: 0
+                        &:hover
+                            color: $ThemClr
+                    .sirs-thmlng-img
+                        cursor: pointer
+                    .ctgry-lst-itm
+                        .edit-sldr-wppr
+                            border-bottom: 0px solid #eaeaea
+                            padding-bottom: 0
+                            margin-bottom: 0
+                    .ctgry-lst-itm
+                        border-bottom: 0px solid #eaeaea
+                        padding-bottom: 0
+                        margin-bottom: 0
+                        padding: 0
+                .edit-sldr-wppr
+                    border-top: 1px solid #eaeaea
+                    padding-top: 15px
+                    margin-top: 15px
+                    display: none
+                    .edt-hdng
+                        display: flex
+                        align-items: center
+                        margin-bottom: 15px
+                        justify-content: space-between
+                        .title
+                            flex-wrap: wrap
+                            small
+                                width: 100%
+                                color: #666
+                                display: block
+                                font-size: 12px
+                                font-weight: 500
+                                line-height: 20px
+                                position: relative
+                            h6
+                                line-height: 24px
+                                font-weight: 700
+                                font-size: 16px
+                                opacity: .8
+                        .cls-edt-btn
+                            color: $white
+                            font-size: 12px
+                            font-weight: 500
+                            line-height: 18px
+                            padding: 2px 10px
+                            border-radius: 3px
+                            background: $ThemClr
+                            border: 1px solid $ThemClr
+                            &:hover
+                                color: $ThemClr
+                                background: $white
+                    .nmbr-crd-wppr
+                        display: flex
+                        align-items: center
+                        justify-content: flex-start
+                        small
+                            opacity: .5
+                            font-size: 14px
+                            font-weight: 500
+                            color: #666666
+                            line-height: 18px
+                        .slctr-txt-wppr
+                            border: 1px solid #b7b7b7
+                            padding: 0 18px 0 8px
+                            border-radius: 3px
+                            margin-left: 10px
+                            width: auto
+                            &::before
+                                @include aftrBeforBX(6px, 6px, 50%, 0px,0,auto)
+                                transform: rotate(45deg) translate(-8px, 1px)
+                                border-bottom: 1px solid #b7b7b7
+                                border-right: 1px solid #b7b7b7
+                            .slct-txt
+                                line-height: 20px
+                                font-size: 14px
+                                color: #b7b7b7
+                                font-weight: 400
+                                display: block
+                            ul
+                                box-shadow: 0 3px 5px #0000007a
+                                position: absolute
+                                background: $white
+                                padding: 5px 0
+                                display: none
+                                width: 100%
+                                z-index: 2
+                                top: 27px
+                                left: 0
+                                li
+                                    width: 100%
+                                    display: block
+                                    cursor: pointer
+                                    font-size: 12px
+                                    font-weight: 400
+                                    padding: 3px 10px
+                                    line-height: 17px
+                                    position: relative
+                                    color: #666
+                                    &:hover
+                                        background: #ccc
+                .ctgry-lst-itm
+                    padding: 0 20px
+                    margin-bottom: 10px
+                    padding-bottom: 10px
+                    border-bottom: 1px solid #eaeaea
+                    &:last-child
+                        margin-bottom: 0
+                    .ctgry-hdng
+                        display: flex
+                        padding: 0 0px
+                        align-items: center
+                        margin-bottom: 10px
+                        justify-content: space-between
+                    .ctgry-sld-wppr
+                        display: flex
+                        margin-top: 10px
+                        align-items: flex-start
+                        justify-content: space-between
+                        .ctgry-sldr-bx
+                            .ctgry-sldr
+                                padding: 0 15px
+                                .ctgry-sld-itm
+                                    span
+                                        img
+                                            border-radius: 5px
+                                        p
+                                            text-align: center
+                                            margin-top: 5px
+                                            font-size: 10px
+                                            width: 100%
+                                .owl-nav
+                                    [class*=owl-]
+                                        font-size: 16px
+                                        line-height: 20px
+                                        img
+                                            width: 7px
+                                        &:hover
+                                            color: $ThemClr
+        .srirs-stng-popup
+            display: none
+        // Google Adds Setting Sass
+        .ads-cntct-wppr
+            overflow: auto
+            padding: 0px 30px
+            height: calc( 100vh - 180px )
+            .ads-itm-wppr
+                .ads-itm
+                    width: 100%
+                    margin-bottom: 30px
+                    .title
+                        h3
+                            font-size: 17px
+                            color: #666666
+                            font-weight: 700
+                            line-height: 24px
+                            margin-bottom: 10px
+                    .ads-img
+                        cursor: pointer
+        // live Channel Setting Sass
+        .live_TV_Wppr
+            .lv_tv
+                .add_more_wppr
+                    padding: 20px
+                    margin-bottom: 30px
+                    border-bottom: 1px solid rgba(0, 0, 0, 0.15)
+                    .add_icn
+                        justify-content: center
+                        margin-bottom: 20px
+                        align-items: center
+                        display: flex
+                        img
+                            width: 100px
+                            display: block
+                    .title
+                        display: flex
+                        flex-wrap: wrap
+                        align-items: center
+                        justify-content: center
+                        p
+                            width: 100%
+                            color: #666
+                            font-size: 14px
+                            font-weight: 300
+                            line-height: 20px
+                            text-align: center
+                        .add_more_btn
+                            border: 1px solid $ThemClr
+                            background: transparent
+                            margin-bottom: 20px
+                            border-radius: 5px
+                            padding: 8px 30px
+                            line-height: 20px
+                            font-size: 16px
+                            color: $ThemClr
+                            &:hover
+                                color: $white
+                                background: $ThemClr
+                .add_chnl_lst_wppr
+                    .add_chnl_itm
+                        justify-content: flex-start
+                        transition: all .5s
+                        margin-bottom: 10px
+                        align-items: center
+                        padding: 8px 0
+                        display: flex
+                        &:last-child
+                            margin-bottom: 0
+                        .chnl_vdo
+                            padding: 3px
+                            border-radius: 3px
+                            border: 1px solid #c8c8c8
+                            .chnl_vdd_pstr
+                                top: 0
+                                left: 0
+                                z-index: 1
+                                width: 100%
+                                height: 100%
+                                display: flex
+                                cursor: pointer
+                                background: $white
+                                position: absolute
+                                align-items: center
+                                transition: all .5s
+                                justify-content: center
+                                img
+                                    width: 90%
+                            .rmv_pstr
+                                opacity: 0
+                                visibility: hidden
+                            video
+                                border-radius: 3px
+                        .title
+                            display: flex
+                            align-items: center
+                            justify-content: space-between
+                            .add_more_btn
+                                font-size: 14px
+                                color: $ThemClr
+                                font-weight: 400
+                                line-height: 20px
+                                padding: 3px 14px
+                                border-radius: 5px
+                                background: transparent
+                                border: 1px solid $ThemClr
+                                &:hover
+                                    background: $ThemClr
+                                    color: $white
+                            .dlt_itm
+                                border-color: #FF4218
+                                color: #FF4218
+                                &:hover
+                                    background: #FF4218
+                                    color: $white
+                    .actv_lv_chnl
+                        background: #f3f3f3
+
+
+        .live_chnl_wppr
+            overflow: hidden
+            display: none
+            .cls_lv_frm
+                top: 10px
+                z-index: 2
+                right: 15px
+                width: 20px
+                height: 20px
+                cursor: pointer
+                position: absolute
+                border-radius: 50%
+                background: transparent
+                border: 1px solid $black
+                &:hover
+                    background: $ThemClr
+                    border-color: $white
+                    &::before,
+                    &::after
+                        background: $white
+                &::before,
+                &::after
+                    @include aftrBeforBX(0,0,50%,0,0,50%)
+                    transform: translate(-50%,-50%) rotate(45deg)
+                    background: $black
+                &::before
+                    width: 70%
+                    height: 2px
+                &::after
+                    width: 2px
+                    height: 70%
+            .logo-uplod
+                fieldset
+                    .brwsr_btn
+                        display: flex
+                        margin-top: 15px
+                        position: relative
+                        align-items: center
+                        justify-content: flex-end
+                        .inputfile
+                            cursor: pointer
+                            height: 100%
+                            padding: 0
+                            z-index: 1
+                            left: 0
+                            top: 0
+                        p
+                            display: block
+                            color: $ThemClr
+                            cursor: pointer
+                            font-size: 13px
+                            font-weight: 500
+                            line-height: 20px
+                            padding: 2px 10px
+                            position: relative
+                            border-radius: 5px
+                            border: 1px solid $ThemClr
+                            &:hover
+                                color: $white
+                                background: $ThemClr
+            .slctr-txt-wppr
+                border: 0
+                width: 100%
+                display: block
+                font-size: 14px
+                line-height: 24px
+                padding: 10px 15px
+                border-radius: 5px
+                background: #F4F7FE
+                &::before
+                    @include aftrBeforBX(6px, 6px, 50%, 0px,0,auto)
+                    transform: rotate(45deg) translate(-8px, 1px)
+                    border-bottom: 1px solid #959595
+                    border-right: 1px solid #959595
+                .slct-txt
+                    line-height: 20px
+                    font-size: 14px
+                    color: #b7b7b7
+                    font-weight: 400
+                    display: block
+                ul
+                    box-shadow: 0 3px 5px rgb(0 0 0 / 19%)
+                    position: absolute
+                    background: $white
+                    padding: 5px 0
+                    display: none
+                    width: 100%
+                    z-index: 3
+                    top: 40px
+                    left: 0
+                    li
+                        width: 100%
+                        display: block
+                        cursor: pointer
+                        font-size: 12px
+                        font-weight: 400
+                        padding: 3px 10px
+                        line-height: 17px
+                        position: relative
+                        color: #666
+                        &:hover
+                            background: #ccc
+// datepicker design css 
+
+#edit_end_time ~ .bootstrap-datetimepicker-widget
+    &::after        
+        left: auto
+        right: 30px
+.bootstrap-datetimepicker-widget.dropdown-menu
+    padding: 8px
+    max-height: none
+    height: 0
+    opacity: 0
+    visibility: hidden
+    transition: all 1s
+    overflow: initial
+    overflow-x: initial
+    width: 100% !important
+    border-radius: 8px !important
+    box-shadow: 0 3px 1px -2px #0003, 0 2px 2px 0 #0000007b, 0 1px 5px 0 #00000095 !important
+    &::after
+        left: 30px
+    .list-unstyled
+        .collapse
+            .datepicker
+                .datepicker-days
+                    table.table-condensed
+                        thead
+                            tr
+                                .dow
+                                    color: #d2d2d2
+
+.show_clndr
+    opacity: 1 !important
+    height: 330px !important
+    visibility: visible !important
+
+    
+.bootstrap-datetimepicker-widget 
+    table 
+        td.active
+            border-radius: 5px
+            &:hover
+                background: $ThemClr
+                
+
+
+
+
+
+
+
+
+

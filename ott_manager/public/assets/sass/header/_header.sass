@@ -1,0 +1,370 @@
+// header
+//     position: fixed
+//     width: 100%
+//     top: 0px
+//     left: 0px
+//     z-index: 9
+//     @include respond-to(screen-767)
+//         padding: 0
+//     .row
+//         :display flex
+
+.title
+    width: 100%
+    position: relative
+    display: inline-block
+.title h1,
+.title h2,
+.title h3,
+.title h4,
+.title h5,
+.title h6
+    font-size: 60px
+    line-height: 53px
+    color: #000
+.title p
+    font-size: 16px
+    line-height: 24px
+    text-align: left
+    font-weight: 500
+    font-family: 'Ubuntu', sans-serif
+.CmnPage
+    width: 100%
+    position: relative
+    display: block
+/* Commain Button Class */
+main
+    width: 100%
+    display: block
+    position: relative
+.ComnBtn
+    display: flex
+    align-items: center
+    justify-content: flex-start
+    .ComnBtn-Txt
+        padding: 5px 20px
+        text-transform: uppercase
+        display: inline-block
+        font-weight: 500
+        font-size: 15px
+        line-height: 30px
+        border: 0
+        transition: all 1s
+        position: relative
+        z-index: 1
+        color: $white
+        text-align: center
+        border-radius: 5px
+        font-family: $font
+        &:hover
+            color: $ThemClr
+        @include respond-to(screen-675)
+            padding: 0
+            font-size: 12px
+.owl-dots,
+.owl-nav
+    position: absolute
+    width: 100%
+    top: 50%
+    left: 0
+    transform: translateY(-50%)
+    margin-top: 0 !important
+    z-index: -1
+.owl-nav
+    [class*=owl-]
+        background: transparent !important
+        margin: 0 !important
+        padding: 0 !important
+    .owl-prev
+        float: left
+    .owl-next
+        float: right
+.Ovrly
+    width: 0%
+    height: 100vh
+    position: fixed
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    background: #00000059
+    z-index: 3
+    transition: all 1s
+.OpnOverLay
+    width: 100%
+.ClsPopBtn
+    width: 20px
+    height: 20px
+    position: absolute
+    top: 20px
+    right: 20px
+    z-index: 2
+    cursor: pointer
+    background: transparent
+    border: 0
+    padding: 0
+    filter: brightness(0)
+    img
+        width: 100%
+        transition: all 1s
+    &:hover img
+        transform: rotate(90deg)
+iframe
+    width: 100%
+    height: 100%
+.orvly-Shdw
+    width: 0%
+    height: calc(100vh - 104px)
+    position: absolute
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    z-index: 2
+    background: #0000004a
+    display: block
+    transition: all 1s
+.OpnLayBx
+    width: 100%
+.ovrly-pop
+    background: #0000004a
+    transition: all 1s
+    position: fixed
+    display: block
+    height: 0vh
+    width: 100%
+    z-index: 2
+    bottom: 0
+    right: 0
+    left: 0
+    top: 0
+.ovrly-show
+    height: 100vh
+// Comain all pages Text From sass
+fieldset,
+.Cstm-Slct,
+.Custum_FromBx
+    width: 100%
+    position: relative
+    display: block
+    z-index: 1
+    margin-bottom: 25px
+.FrmTxt,
+.Custum_FromBx select
+    width: 100%
+    font-size: 16px
+    border: 0
+    background: transparent
+    border-bottom: 1px solid #b4bbc6
+    display: block
+    padding: 8px 0
+    &:focus~.PlcHldrTxt
+        top: -10px
+        font-size: 12px
+.Cstm-Slct
+    &::before
+        @include aftrBeforBX(0%,0%, 50%,0,0,auto)
+        border-left: 3px solid transparent
+        border-right: 3px solid transparent
+        border-top: 3px solid $black
+        transform: translateY(-50%)
+.PlcHldrTxt.Focus
+    top: -10px
+    font-size: 12px
+    color: $black
+.PlcHldrTxt
+    font-size: 14px
+    position: absolute
+    top: 10px
+    left: 0px
+    z-index: -1
+    color: #575757
+    transition: all 1s
+textarea.FrmTxt
+    &::placeholder
+        color: $black
+        font-size: 14px
+.FixContcNbr_wppr
+    position: fixed
+    bottom: 10%
+    z-index: 8
+    left: 50px
+    .FixContcNbr_Bx
+        display: inline-block
+        position: relative
+        ul,li
+            display: inline-block
+            position: relative
+            li
+                display: block
+                margin-bottom: 15px
+                &:last-child
+                    margin-bottom: 0
+                &:nth-child(1) a
+                   background: #5b9d0d
+                a
+                    font-size: 25px
+                    color: $white
+                    width: 50px
+                    height: 50px
+                    border-radius: 50%
+                    display: flex
+                    align-items: center
+                    justify-content: center
+                    &:hover
+                        background: $black
+                    .fa-phone
+                        transform: rotate(90deg)
+
+// page design sass
+
+.lft-sld-menu
+    width: 350px
+    display: block
+    position: relative
+    height: 100%
+.page-body-wppr
+    width: calc( 100% - 350px )
+    display: block
+    overflow: hidden
+    position: relative
+    height: 100%
+    padding: 0 15px
+header
+    .top-hdr-wppr
+        width: 100%
+        display: flex
+        padding: 20px 0
+        align-items: center
+        justify-content: flex-start
+        .rsp-tab
+            width: 80%
+            display: block
+            position: relative
+            .title
+                ul
+                    width: 100%
+                    display: flex
+                    align-content: center
+                    justify-content: center
+                    &:last-child
+                        margin: 0
+                    li
+                        margin-right: 20px
+                        font-size: 16px
+                        line-height: 20px
+                        color: #b3b1b1
+                        cursor: pointer
+                        .blue-icn
+                            display: none
+
+                        &:hover
+                            color: $ThemClr
+                    .actv-mode
+                        color: $ThemClr
+                        .blue-icn
+                            display: block
+                        .gry-icn
+                            display: none
+        .pblc-edt-wppr
+            width: 20%
+            display: flex
+            align-content: center
+            justify-content: space-between
+            button
+                padding: 6px 15px
+                border-radius: 50px
+                width: 48%
+                display: flex
+                align-items: center
+                justify-content: center
+                background: $white
+                border: 1px solid #666
+                font-size: 16px
+                line-height: 24px
+                font-weight: 700
+                &:hover
+                    background: #C7D3FA
+                    border-color: #C7D3FA
+
+// Page baar  sass
+.page_baar
+    width: 100%
+    display: block
+    position: relative
+.page_baar
+    padding: 30px 0
+    nav
+        display: flex
+        align-items: center
+        justify-content: center
+        .flex-1
+            display: none
+        p.text-sm.text-gray-700.leading-5
+            position: absolute
+            bottom: 0
+            right: 0
+            z-index: 1
+            font-size: 14px
+            color: #666
+        .hidden
+            div
+                .rounded-md
+                    box-shadow: none !important
+                    justify-content: center
+                    align-items: center
+                    position: relative
+                    display: flex
+                    a,
+                    span.relative.inline-flex.items-center.px-4.py-2.-ml-px.text-sm.font-medium.text-gray-500.bg-white.border.border-gray-300.cursor-default.leading-5
+                        width: 30px
+                        height: 30px
+                        display: flex
+                        border-radius: 50%
+                        padding: 0 !important
+                        font-size: 14px
+                        color: #666
+                        font-weight: 700
+                        margin: 0 5px
+                        border: 1px solid #666
+                        box-shadow: 0 2px 2px #666666a3
+                        align-items: center
+                        justify-content: center
+                        &:hover
+                            background: $ThemClr
+                            color: $white
+                    span.relative.inline-flex.items-center.px-4.py-2.-ml-px.text-sm.font-medium.text-gray-500.bg-white.border.border-gray-300.cursor-default.leading-5
+                        margin-left: 10px
+                svg.w-5.h-5,
+                span.relative.inline-flex.items-center.px-2.py-2.text-sm.font-medium.text-gray-500.bg-white.border.border-gray-300.cursor-default.rounded-l-md.leading-5
+                    display: block
+                    font-size: 14px
+                    width: 30px
+                    height: 30px
+                    display: flex
+                    border-radius: 50%
+                    padding: 0 !important
+                    font-size: 14px
+                    color: #666
+                    font-weight: 700
+                    box-shadow: 0 2px 2px #666666a3
+                    align-items: center
+                    margin-left: 0px !important
+                    justify-content: center
+.ctgry_slng_lodr
+    nav
+        .hidden
+            display: flex
+            flex-wrap: wrap
+            align-items: center
+            justify-content: center
+            flex-direction: column-reverse
+        p.text-sm.text-gray-700.leading-5
+           margin-top: 15px
+           position: relative
+           bottom: auto
+           right: auto
+
+
+
+
